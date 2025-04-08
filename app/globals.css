@@ -1,0 +1,7 @@
+/* globals.css */
+@import "tailwindcss/preflight"; /* Base styles for Tailwind */
+@tailwind utilities;
+
+body {
+  font-family: "Arial", sans-serif;
+}
