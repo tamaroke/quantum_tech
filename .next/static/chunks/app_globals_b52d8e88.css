@@ -174,14 +174,6 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
   display: none !important;
 }
 
-.\@container {
-  container-type: inline-size;
-}
-
-.\@container-\[inline-size\] {
-  container-type: inline-size;
-}
-
 .pointer-events-auto {
   pointer-events: auto;
 }
@@ -229,16 +221,8 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
   position: absolute;
 }
 
-.absolute\! {
-  position: absolute !important;
-}
-
 .fixed {
   position: fixed;
-}
-
-.fixed\! {
-  position: fixed !important;
 }
 
 .relative {
@@ -369,10 +353,6 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
   width: 100%;
 }
 
-.container\! {
-  width: 100% !important;
-}
-
 .mx-auto {
   margin-inline: auto;
 }
@@ -412,16 +392,8 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
   display: grid;
 }
 
-.grid\! {
-  display: grid !important;
-}
-
 .hidden {
   display: none;
-}
-
-.hidden\! {
-  display: none !important;
 }
 
 .inline {
@@ -522,10 +494,6 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
 
 .min-h-screen {
   min-height: 100vh;
-}
-
-.w-1\/2 {
-  width: 50%;
 }
 
 .w-auto {
@@ -1265,26 +1233,6 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
   border-color: #0000;
 }
 
-.bg-\(--my_variable\) {
-  background-color: var(--my_variable);
-}
-
-.bg-\(color\:--my-color\) {
-  background-color: var(--my-color);
-}
-
-.bg-\[\#0088cc\] {
-  background-color: #08c;
-}
-
-.bg-\[color\:var\(--my-color\)\] {
-  background-color: var(--my-color);
-}
-
-.bg-\[var\(--my_variable\)\] {
-  background-color: var(--my_variable);
-}
-
 .-bg-conic {
   --tw-gradient-position: in oklab;
   background-image: conic-gradient(var(--tw-gradient-stops));
@@ -1573,10 +1521,6 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
   font-family: var(--font-geist-sans);
 }
 
-.text-\[80px\] {
-  font-size: 80px;
-}
-
 .leading-none {
   --tw-leading: 1;
   line-height: 1;
@@ -1669,18 +1613,6 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
 
 .whitespace-pre-wrap {
   white-space: pre-wrap;
-}
-
-.\[color\:red\] {
-  color: red;
-}
-
-.\[color\:red\]\/50 {
-  color: oklab(62.7955% .224863 .125846 / .5);
-}
-
-.\[color\:red\]\/50\! {
-  color: oklab(62.7955% .224863 .125846 / .5) !important;
 }
 
 .capitalize {
@@ -1946,10 +1878,6 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
   filter: var(--tw-blur, ) var(--tw-brightness, ) var(--tw-contrast, ) var(--tw-grayscale, ) var(--tw-hue-rotate, ) var(--tw-invert, ) var(--tw-saturate, ) var(--tw-sepia, ) var(--tw-drop-shadow, );
 }
 
-.\!filter {
-  filter: var(--tw-blur, ) var(--tw-brightness, ) var(--tw-contrast, ) var(--tw-grayscale, ) var(--tw-hue-rotate, ) var(--tw-invert, ) var(--tw-saturate, ) var(--tw-sepia, ) var(--tw-drop-shadow, ) !important;
-}
-
 .filter {
   filter: var(--tw-blur, ) var(--tw-brightness, ) var(--tw-contrast, ) var(--tw-grayscale, ) var(--tw-hue-rotate, ) var(--tw-invert, ) var(--tw-saturate, ) var(--tw-sepia, ) var(--tw-drop-shadow, );
 }
@@ -2130,14 +2058,6 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
 .select-all {
   -webkit-user-select: all;
   user-select: all;
-}
-
-.\[fix\:634\] {
-  fix: 634;
-}
-
-.\[hash\:base64\] {
-  hash: base64;
 }
 
 .backface-hidden {
