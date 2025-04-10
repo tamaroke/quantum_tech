@@ -1,5 +1,6 @@
 import React from "react";
 import "./globals.css"; // Import global styles (or Tailwind, etc.)
+import Navbar from "../components/Navbar";
 
 export const metadata = {
   title: "Quantum Tech",
@@ -14,7 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-gray-50">{children}</body>
+      <body className="bg-gray-50 text-gray-900">
+        <Navbar /> {/* ✅ This is now correctly inside <body> */}
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
