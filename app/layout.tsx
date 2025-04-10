@@ -1,6 +1,7 @@
 import React from "react";
-import "./globals.css"; // Import global styles (or Tailwind, etc.)
+import "./globals.css";
 import Navbar from "../components/Navbar";
+import { Toaster } from "react-hot-toast";
 
 export const metadata = {
   title: "Quantum Tech",
@@ -16,8 +17,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-gray-50 text-gray-900">
-        <Navbar /> {/* ✅ This is now correctly inside <body> */}
+        <Navbar />
         <main>{children}</main>
+
+        {/* ✅ Global Toast Notification Handler */}
+        <Toaster position="top-right" />
       </body>
     </html>
   );

@@ -1972,6 +1972,11 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
   transition-behavior: normal;
 }
 
+.duration-200 {
+  --tw-duration: .2s;
+  transition-duration: .2s;
+}
+
 .duration-300 {
   --tw-duration: .3s;
   transition-duration: .3s;

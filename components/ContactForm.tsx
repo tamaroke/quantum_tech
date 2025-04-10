@@ -1,65 +1,108 @@
-// components/ContactForm.tsx
-import React from "react";
+"use client";
 
-const ContactForm = () => {
+import { useState } from "react";
+import toast from "react-hot-toast";
+
+export default function ContactForm() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    phone: "",
+    service: "",
+    message: "",
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    toast.success("Message sent successfully!");
+    setFormData({
+      name: "",
+      email: "",
+      subject: "",
+      phone: "",
+      service: "",
+      message: "",
+    });
+  };
+
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
+    >
+  ) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
   return (
-    <section className="max-w-3xl mx-auto bg-white p-10 rounded-2xl shadow">
-      <h1 className="text-4xl font-bold mb-6 text-center text-indigo-600">
-        Contact Us
-      </h1>
-      <p className="text-lg text-center mb-10">
+    <div className="min-h-screen flex flex-col items-center justify-start px-4 py-12 bg-white text-gray-800">
+      <h1 className="text-3xl font-bold mb-2">Contact Us</h1>
+      <p className="text-center mb-8 text-gray-600">
         Fill out the form below or email us directly at{" "}
-        <a
-          href="mailto:your-email@gmail.com"
-          className="text-indigo-600 font-semibold"
-        >
+        <a href="mailto:oigarak@gmail.com" className="text-blue-600 underline">
           oigarak@gmail.com
         </a>
       </p>
 
-      <form className="grid grid-cols-1 gap-6">
+      <form className="w-full max-w-xl space-y-4" onSubmit={handleSubmit}>
         <input
-          type="text"
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
           placeholder="Name"
-          className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          className="input"
+          required
         />
         <input
-          type="email"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
           placeholder="Email"
-          className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          className="input"
+          required
         />
         <input
-          type="text"
+          name="subject"
+          value={formData.subject}
+          onChange={handleChange}
           placeholder="Subject"
-          className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          className="input"
         />
         <input
-          type="tel"
+          name="phone"
+          value={formData.phone}
+          onChange={handleChange}
           placeholder="Phone Number"
-          className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          className="input"
         />
-        <select className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+        <select
+          name="service"
+          value={formData.service}
+          onChange={handleChange}
+          className="input"
+        >
           <option>Select Service Type</option>
-          <option>Software Installation</option>
-          <option>Computer Repair</option>
-          <option>IoT Development</option>
-          <option>Web/App Development</option>
+          <option>App Development</option>
           <option>Electronics Design</option>
+          <option>Computer Servicing</option>
+          <option>IoT Solutions</option>
         </select>
         <textarea
-          rows={5}
+          name="message"
+          value={formData.message}
+          onChange={handleChange}
           placeholder="Your Message"
-          className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
-        ></textarea>
+          rows={5}
+          className="input"
+        />
+
         <button
           type="submit"
-          className="bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition"
+          className="w-full bg-blue-600 text-white font-semibold py-2 rounded-lg hover:bg-blue-700 transition duration-200"
         >
           Send Message
         </button>
       </form>
-    </section>
+    </div>
   );
-};
-
-export default ContactForm;
+}

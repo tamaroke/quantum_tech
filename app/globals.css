@@ -1,6 +1,5 @@
-/* globals.css */
-@import "tailwindcss/preflight"; /* Base styles for Tailwind */
-@tailwind utilities;
+@import "tailwindcss/preflight"; /* Reset and base styles */
+@import "tailwindcss/utilities"; /* All utility classes */
 
 body {
   font-family: "Arial", sans-serif;
