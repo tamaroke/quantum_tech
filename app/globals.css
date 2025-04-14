@@ -1,6 +1,29 @@
-@import "tailwindcss/preflight"; /* Reset and base styles */
-@import "tailwindcss/utilities"; /* All utility classes */
+/* Make sure these three lines are at the top of your globals.css file */
+
+@tailwind utilities;
+
+/* Your custom styles can go below */
+html {
+  scroll-behavior: smooth;
+}
 
 body {
-  font-family: "Arial", sans-serif;
+  min-height: 100vh;
+}
+
+/* If you need custom animations, add them here */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
 }
