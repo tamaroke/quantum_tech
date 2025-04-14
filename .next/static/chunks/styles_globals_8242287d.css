@@ -1,0 +1,31 @@
+/* [project]/styles/globals.css [app-client] (css) */
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-float {
+  animation: 5s ease-in-out infinite float;
+}
+
+
+/*# sourceMappingURL=styles_globals_8242287d.css.map*/

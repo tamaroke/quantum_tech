@@ -1,5 +1,5 @@
 import React from "react";
-import "./globals.css";
+import "../styles/globals.css";
 import Link from "next/link";
 
 export default function RootLayout({

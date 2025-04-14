@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file://C%3A/myprojects/quantum_tech/styles/globals.css"],"sourcesContent":["/* Make sure these three lines are at the top of your globals.css file */\r\n\r\n@tailwind utilities;\r\n\r\n/* Your custom styles can go below */\r\nhtml {\r\n  scroll-behavior: smooth;\r\n}\r\n\r\nbody {\r\n  min-height: 100vh;\r\n}\r\n\r\n/* If you need custom animations, add them here */\r\n@keyframes float {\r\n  0% {\r\n    transform: translateY(0px);\r\n  }\r\n  50% {\r\n    transform: translateY(-10px);\r\n  }\r\n  100% {\r\n    transform: translateY(0px);\r\n  }\r\n}\r\n\r\n.animate-float {\r\n  animation: float 5s ease-in-out infinite;\r\n}\r\n"],"names":[],"mappings":"AAEA;;AAGA;;;;AAIA;;;;AAKA;;;;;;;;;;;;;;AAYA","debugId":null}}]
+}
