@@ -17,7 +17,7 @@ const Navbar = () => {
     <nav className="bg-white shadow-sm py-4 px-6 flex items-center sticky top-0 z-50">
       {/* Logo or Brand */}
       <h1 className="text-2xl font-bold text-blue-700 tracking-wide">
-        Quantum Tech!!
+        Quantum Tech
       </h1>
 
       {/* Nav Links aligned to the right */}
