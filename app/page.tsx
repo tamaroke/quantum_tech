@@ -52,7 +52,7 @@ export default function Page() {
                 <h3 className="text-xl font-bold">{service.title}</h3>
               </div>
               <p className="text-gray-200 mb-4">{service.description}</p>
-              <button className="bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded">
+              <button className="bg-pink-600 hover:bg-purple-700 text-white py-2 px-4 rounded">
                 Learn More
               </button>
             </div>

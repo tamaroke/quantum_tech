@@ -59,6 +59,7 @@
     --color-purple-800: oklch(43.8% .218 303.724);
     --color-purple-900: oklch(38.1% .176 304.987);
     --color-pink-400: oklch(71.8% .202 349.761);
+    --color-pink-600: oklch(59.2% .249 .584);
     --color-rose-200: oklch(89.2% .058 10.001);
     --color-rose-500: oklch(64.5% .246 16.439);
     --color-rose-900: oklch(41% .159 10.272);
@@ -816,6 +817,10 @@
     .bg-indigo-900\/50 {
       background-color: color-mix(in oklab, var(--color-indigo-900) 50%, transparent);
     }
+  }
+
+  .bg-pink-600 {
+    background-color: var(--color-pink-600);
   }
 
   .bg-purple-600 {
