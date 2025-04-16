@@ -1,8 +1,8 @@
-/* Make sure these three lines are at the top of your globals.css file */
+/* ✅ These three MUST be at the top */
 
-@tailwind utilities;
+@import "tailwindcss";
 
-/* Your custom styles can go below */
+/* ✅ Custom styles can follow */
 html {
   scroll-behavior: smooth;
 }
@@ -11,7 +11,7 @@ body {
   min-height: 100vh;
 }
 
-/* If you need custom animations, add them here */
+/* Optional: floating animation */
 @keyframes float {
   0% {
     transform: translateY(0px);

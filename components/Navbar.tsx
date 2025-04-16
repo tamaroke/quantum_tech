@@ -14,20 +14,23 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-white shadow-sm py-4 px-6 flex justify-between items-center sticky top-0 z-50">
+    <nav className="bg-white shadow-sm py-4 px-6 flex items-center sticky top-0 z-50">
+      {/* Logo or Brand */}
       <h1 className="text-2xl font-bold text-blue-700 tracking-wide">
-        Quantum Tech
+        Quantum Tech!!
       </h1>
-      <div className="flex space-x-6 font-medium">
+
+      {/* Nav Links aligned to the right */}
+      <div className="ml-auto flex gap-4">
         {links.map(({ href, label }) => (
           <Link
             key={href}
             href={href}
             className={clsx(
-              "transition hover:text-blue-600",
+              "px-4 py-2 rounded-lg transition text-sm font-medium",
               pathname === href
-                ? "text-blue-700 font-semibold border-b-2 border-blue-500"
-                : "text-gray-700"
+                ? "bg-blue-600 text-white shadow"
+                : "bg-gray-100 text-gray-700 hover:bg-blue-100 hover:text-blue-600"
             )}
           >
             {label}
