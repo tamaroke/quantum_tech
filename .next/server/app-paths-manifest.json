@@ -1,3 +1,11 @@
 {
-  "/page": "app/page.js"
+  "/_not-found/page": "app/_not-found/page.js",
+  "/page": "app/page.js",
+  "/portfolio/page": "app/portfolio/page.js",
+  "/services/app-development/page": "app/services/app-development/page.js",
+  "/services/computer-repair-servicing/page": "app/services/computer-repair-servicing/page.js",
+  "/services/electronics-design/page": "app/services/electronics-design/page.js",
+  "/services/iot-solutions/page": "app/services/iot-solutions/page.js",
+  "/services/software-installation/page": "app/services/software-installation/page.js",
+  "/services/web-development/page": "app/services/web-development/page.js"
 }

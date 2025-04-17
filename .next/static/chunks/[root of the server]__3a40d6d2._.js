@@ -7422,7 +7422,7 @@ class Router {
                     });
                     return new Promise(()=>{});
                 }
-                const routerFilterSValue = ("TURBOPACK compile-time value", JSON.parse('{"numItems":3,"errorRate":0.0001,"numBits":58,"numHashes":14,"bitArray":[1,1,0,1,0,1,1,1,1,0,0,0,0,1,0,1,1,1,1,0,0,1,0,1,1,1,0,0,1,0,0,1,0,1,0,1,0,0,1,1,1,0,0,0,1,1,1,1,1,1,1,0,1,0,0,1,1,0]}'));
+                const routerFilterSValue = ("TURBOPACK compile-time value", JSON.parse('{"numItems":9,"errorRate":0.0001,"numBits":173,"numHashes":14,"bitArray":[1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,0,1,0,1,0,1,1,0,1,1,1,0,1,1,0,0,0,1,0,0,1,1,0,1,0,0,1,1,1,0,1,1,0,1,0,1,1,1,1,0,1,1,0,0,0,1,0,0,1,1,1,0,0,1,1,0,0,1,1,0,0,0,1,0,1,1,0,0,0,0,1,1,0,1,1,1,0,0,1,1,1,0,0,1,0,0,1,1,1,1,1,0,0,0,0,1,1,1,0,1,1,1,1,0,0,0,0,1,1,0,0,0,1,1,0,0,1,1,0,0,0,0,0,0,1,1,1,0,1,0,0,1,1,0,1,0,1,0,1,1,1,1,0,0,0,0,1,0,1,1,1,1,1,0,1,0]}'));
                 if (!staticFilterData && routerFilterSValue) {
                     staticFilterData = routerFilterSValue ? routerFilterSValue : undefined;
                 }
