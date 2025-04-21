@@ -19,6 +19,7 @@ export default function RootLayout({
             <p>
               © {new Date().getFullYear()} Quantum Tech. All rights reserved.
             </p>
+            <p>Oigara Kevin Tamaro</p>
           </div>
         </footer>
       </body>
